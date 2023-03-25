@@ -11,8 +11,7 @@ meta = MetaDate(db)
 artist_table = Table(
     "Artist", meta,
     Column("ArtistId", Integer, primary_key=True),
-    Column("Name", String),
-    Column("ArtistId", Integer, ForeignKey("artist_table.ArtistId"))
+    Column("Name", String)
 )
 
 # Create variable for "Artist" Table
